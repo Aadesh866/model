@@ -1,0 +1,452 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aadesh Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static '../static/styles/main.css' %}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  </head>
+  <body>
+    <div id="hero" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item text-center slide-1 vh-100 active" style=" background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/image/s7\(m\).jpg);  background-repeat: no-repeat;
+        background-position:cover;
+        background-size: cover;">
+          <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-8"  data-aos="fade-down" >
+                <h1 class="display-1 fw-bold text-white">MENU</h1>
+                <h6 class="fw-bold text-white" data-aos="fade-up" data-aos-duration="1250">HandPickable Autenticated Food Items</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section id="menu" class="bg-light">
+      <div class="container" data-aos="fade-down">
+        <div class="row">
+          <div class="col-12 intro-text">
+            <h1>Explore our Menu </h1>
+            <p>
+              Immerse yourself in culinary artistry at our restaurant, where each dish is a masterpiece. Our menu boasts a symphony of flavors, from savory classics to innovative creations, designed to tantalize your taste buds. Experience a dining journey that blends exquisite ingredients with a touch of elegance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Tabs -->
+      <div class="container" data-aos="fade-up">
+        <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All Items</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-breakfast-tab" data-bs-toggle="pill" data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast" aria-selected="true">Breakfast</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Lunch</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner" aria-selected="true">Dinner</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active " id="pills-all" role="tabpannel" aria-labelledby="pills-all-tab" tabindex="0">
+
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/image/m1.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Pizza</a></h5>
+                    <p class="small">Classic Italian delight featuring a thin, crispy crust topped with savory tomato sauce, melted cheese, and a variety of delectable toppings, baked to perfection.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m10.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.8)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Cake</a></h5>
+                    <p class="small">Delectable dessert made with layers of moist, sweet sponge, and luscious frosting, available in various flavors and styles to satisfy your sweet cravings.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m9.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >PRETZEL </a></h5>
+                    <p class="small">Twisted, savory snack, typically baked to a golden brown and sprinkled with salt, perfect for satisfying your craving for a crunchy, salty delight.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m4.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.3)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >French Fries</a></h5>
+                    <p class="small">Golden, crispy potato sticks, a classic side dish, perfect for dipping and a favorite snack for all ages. Served hot and seasoned to perfection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/image/m-fried rice.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.8)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Fried Rice</a></h5>
+                    <p class="small">Savor our delectable fried rice, a tantalizing blend of fluffy rice, offering a symphony of flavors and textures to delight your taste buds.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/image/m-chicken.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.7)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Chicken Varities</a></h5>
+                    <p class="small">Indulge in a delightful array of chicken dishes, from sizzling grilled chicken to savory butter chicken, offering something for every palate on our menu</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/image/m-roll.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.6)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >ROLLS</a></h5>
+                    <p class="small">Indulge in our exquisite rolls, a culinary delight featuring a fusion of fresh ingredients rolled into a perfect balance of flavors and textures.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/image/m-drinks.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Drinks</a></h5>
+                    <p class="small">
+                      Quench your thirst with our refreshing and diverse selection of beverages.We Offer array of drinks, from classic favorites to unique concoctions.</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="tab-pane fade show " id="pills-breakfast" role="tabpannel" aria-labelledby="pills-breakfast-tab" tabindex="0">
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m10.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.8)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Cake</a></h5>
+                    <p class="small">Delectable dessert made with layers of moist, sweet sponge, and luscious frosting, available in various flavors and styles to satisfy your sweet cravings.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m9.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >PRETZEL </a></h5>
+                    <p class="small">Twisted, savory snack, typically baked to a golden brown and sprinkled with salt, perfect for satisfying your craving for a crunchy, salty delight.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/image/m-roll.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.6)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >ROLLS</a></h5>
+                    <p class="small">Indulge in our exquisite rolls, a culinary delight featuring a fusion of fresh ingredients rolled into a perfect balance of flavors and textures.</p>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+
+          <div class="tab-pane fade show " id="pills-lunch" role="tabpannel" aria-labelledby="pills-lunch-tab" tabindex="0">
+            <div class="row gy-4">
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/image/m-fried rice.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.8)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Fried Rice</a></h5>
+                    <p class="small">Savor our delectable fried rice, a tantalizing blend of fluffy rice, offering a symphony of flavors and textures to delight your taste buds.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/image/m-chicken.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.7)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Chicken Varities</a></h5>
+                    <p class="small">Indulge in a delightful array of chicken dishes, from sizzling grilled chicken to savory butter chicken, offering something for every palate on our menu</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/image/m-drinks.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Drinks</a></h5>
+                    <p class="small">
+                      Quench your thirst with our refreshing and diverse selection of beverages.We Offer array of drinks, from classic favorites to unique concoctions.</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="tab-pane fade show " id="pills-dinner" role="tabpannel" aria-labelledby="pills-dinner-tab" tabindex="0">
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m4.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.3)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >French Fries</a></h5>
+                    <p class="small">Golden, crispy potato sticks, a classic side dish, perfect for dipping and a favorite snack for all ages. Served hot and seasoned to perfection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/image/m1.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Pizza</a></h5>
+                    <p class="small">Classic Italian delight featuring a thin, crispy crust topped with savory tomato sauce, melted cheese, and a variety of delectable toppings, baked to perfection.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m10.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.8)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a >Cake</a></h5>
+                    <p class="small">Delectable dessert made with layers of moist, sweet sponge, and luscious frosting, available in various flavors and styles to satisfy your sweet cravings.</p>
+                  </div>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>
+
+      </div>
+      </div>
+      
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1000,
+        delay:75,
+        once:true
+      });
+    </script>
+  </body>
+</html>
+
+{% endblock %}
