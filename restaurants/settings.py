@@ -13,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-o9y$-qvi&s!t753l4$hml8owumvjxr4c6uhx+z4uouunj_h$p1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["blueprintapp.onrender.com"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
